@@ -613,7 +613,7 @@ en "..." (aanklikbaar) toevoegen als 6e resultaat -->
 <xsl:if test="marc:subfield[@code='9']">
 <a> <xsl:attribute name="href">/cgi-bin/koha/opac-detail.pl?biblionumber=<xsl:value-of select="marc:subfield[@code=9]"/></xsl:attribute>&nbsp;Click here to see the record.</a>
 </xsl:if>
-    </xsl:for-each>
+    </xsl:for-each><xsl:text>...</xsl:text>
 </xsl:if>
 <!--<xsl:if test="$DisplayOPACiconsXSLT!='0'">
     <span class="results_summary type">
